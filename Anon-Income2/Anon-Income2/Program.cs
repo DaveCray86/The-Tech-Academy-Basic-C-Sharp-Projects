@@ -14,20 +14,16 @@ namespace Anon_Income2
             Console.ReadLine();
 
             Console.WriteLine("Person 1, please enter your hourly rate: ");
-            Console.ReadLine();
-            int p1Hr = Convert.ToInt32(Console.Read());
+            int p1Hr = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Person 1, please enter your hours worked for the week: ");
-            Console.ReadLine();
-            int p1Hw = Convert.ToInt32(Console.Read());
+            int p1Hw = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Person 2, please enter your hourly rate: ");
-            Console.ReadLine();
-            int p2Hr = Convert.ToInt32(Console.Read());
+            int p2Hr = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Person 2, please enter your hours worked for the week: ");
-            Console.ReadLine();
-            int p2Hw = Convert.ToInt32(Console.Read());
+            int p2Hw = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Weekly Salary of Person 1: ");
             Console.ReadLine();
@@ -43,7 +39,7 @@ namespace Anon_Income2
 
             Console.WriteLine("Does Person 1 make more money than Person 2?");
             bool trueOrFalse = per1Sal > per2Sal; 
-            Console.Write(trueOrFalse.ToString());
+            Console.WriteLine(trueOrFalse.ToString());
             Console.ReadLine();
         }
     }
