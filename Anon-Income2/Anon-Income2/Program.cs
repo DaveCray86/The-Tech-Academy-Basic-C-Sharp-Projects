@@ -16,22 +16,18 @@ namespace Anon_Income2
             Console.WriteLine("Person 1, please enter your hourly rate: ");
             Console.ReadLine();
             int p1Hr = Convert.ToInt32(Console.Read());
-            Console.ReadLine();
 
             Console.WriteLine("Person 1, please enter your hours worked for the week: ");
             Console.ReadLine();
             int p1Hw = Convert.ToInt32(Console.Read());
-            Console.ReadLine();
 
             Console.WriteLine("Person 2, please enter your hourly rate: ");
             Console.ReadLine();
             int p2Hr = Convert.ToInt32(Console.Read());
-            Console.ReadLine();
 
             Console.WriteLine("Person 2, please enter your hours worked for the week: ");
             Console.ReadLine();
             int p2Hw = Convert.ToInt32(Console.Read());
-            Console.ReadLine();
 
             Console.WriteLine("Weekly Salary of Person 1: ");
             Console.ReadLine();
