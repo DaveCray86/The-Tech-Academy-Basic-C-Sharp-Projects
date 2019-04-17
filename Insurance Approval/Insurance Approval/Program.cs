@@ -13,12 +13,10 @@ namespace Insurance_Approval
             Console.WriteLine("What is your age?: ");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            //string answer;
             Console.WriteLine("Have you ever had a DUI charge? Enter True or False: ");
             string answer = Console.ReadLine().ToLower();
             bool answer1 = Convert.ToBoolean(answer);
 
-            
             Console.WriteLine("How many speeding tickets do you have?: ");
             int speedTick = Convert.ToInt32(Console.ReadLine());
 
@@ -47,8 +45,6 @@ namespace Insurance_Approval
                 Console.WriteLine("You are not qualified.");
                 Console.ReadLine();
             }
-            
-
         }
     }
 }
