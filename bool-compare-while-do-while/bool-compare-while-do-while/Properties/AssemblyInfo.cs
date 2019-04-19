@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Math-Operations")]
+[assembly: AssemblyTitle("bool-compare-while-do-while")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Math-Operations")]
+[assembly: AssemblyProduct("bool-compare-while-do-while")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e6a554a4-0d64-42f6-b74d-859cd591c9fb")]
+[assembly: Guid("64970776-e422-4dde-975d-5bee9d7df3a4")]
 
 // Version information for an assembly consists of the following four values:
 //

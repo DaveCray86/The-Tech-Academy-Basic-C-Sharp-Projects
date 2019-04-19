@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables-DataTypes2", "Variables-DataTypes2\Variables-DataTypes2.csproj", "{3144C905-62BA-432B-92B1-D5C23AB3303B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bool-compare-while-do-while", "bool-compare-while-do-while\bool-compare-while-do-while.csproj", "{64970776-E422-4DDE-975D-5BEE9D7DF3A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3144C905-62BA-432B-92B1-D5C23AB3303B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3144C905-62BA-432B-92B1-D5C23AB3303B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3144C905-62BA-432B-92B1-D5C23AB3303B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3144C905-62BA-432B-92B1-D5C23AB3303B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64970776-E422-4DDE-975D-5BEE9D7DF3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64970776-E422-4DDE-975D-5BEE9D7DF3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64970776-E422-4DDE-975D-5BEE9D7DF3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64970776-E422-4DDE-975D-5BEE9D7DF3A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {54D2851B-6B8F-456B-B53D-1BF156BA6179}
+		SolutionGuid = {C558A6EE-BDE4-4295-81C7-442D57C73B08}
 	EndGlobalSection
 EndGlobal

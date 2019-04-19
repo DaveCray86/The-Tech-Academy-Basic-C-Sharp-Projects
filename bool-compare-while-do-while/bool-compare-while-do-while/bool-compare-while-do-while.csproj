@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E6A554A4-0D64-42F6-B74D-859CD591C9FB}</ProjectGuid>
+    <ProjectGuid>{64970776-E422-4DDE-975D-5BEE9D7DF3A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Math_Operations</RootNamespace>
-    <AssemblyName>Math-Operations</AssemblyName>
+    <RootNamespace>bool_compare_while_do_while</RootNamespace>
+    <AssemblyName>bool-compare-while-do-while</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
