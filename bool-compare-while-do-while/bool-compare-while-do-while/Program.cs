@@ -39,7 +39,7 @@ namespace bool_compare_while_do_while
                         number = Convert.ToInt32(Console.ReadLine());
                         break;
                     case 99:
-                        Console.WriteLine("You guessed 101. The tart cart is that-away, try again.");
+                        Console.WriteLine("You guessed 99. Try again.");
                         Console.WriteLine("Guess a number.");
                         number = Convert.ToInt32(Console.ReadLine());
                         break;
