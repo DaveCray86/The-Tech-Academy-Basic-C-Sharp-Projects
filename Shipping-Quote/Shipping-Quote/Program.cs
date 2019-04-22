@@ -19,7 +19,7 @@ namespace Shipping_Quote
             int weight = 50;
             if (pWeight > weight)
             {
-                Console.WriteLine("Your package is too heavy to be shipped via Planet Express.Have a good day.");
+                Console.WriteLine("Your package is too heavy to be shipped via Planet Express. Have a good day.");
                 Console.ReadLine();
                 System.Environment.Exit(0);
             }
