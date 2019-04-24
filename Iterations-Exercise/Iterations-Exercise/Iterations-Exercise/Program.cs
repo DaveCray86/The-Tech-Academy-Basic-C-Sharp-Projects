@@ -109,19 +109,12 @@ namespace Iterations_Exercise
 
             foreach (int num in randomNums)
             {
-                if (input = nums)
+                if (input = num)
                 {
                     Console.WriteLine("The following numbers exist more than once: " + num);
                 }
             }
             Console.ReadLine();
-
-
-            
-
-
-
-
 
         }
     }
