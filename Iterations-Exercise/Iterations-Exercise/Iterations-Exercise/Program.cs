@@ -14,19 +14,15 @@ namespace Iterations_Exercise
             //Ask the user to input some text. 
             //Create a loop that goes through each string in the Array, adding the user’s text to the string.
             //Then create a loop that prints off each string in the Array on a separate line.
+            string[] words = { "strange", "blue", "sink", "dog", "sky", "house", "red" };
+            int words1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(words[words1]);
 
-            int[] numArray = { 616, 702, 808, 319, 214, 215, 408, 555, 302, 123 };
-            Console.WriteLine("Select a number between 0 and 9: ");
-            int input1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine(numArray[input1]);
-            Console.ReadLine();
-
-            int e = numArray[];
-            while (e => 8)
+            int words2 = 0;
+            while (words1 != words)
             {
-                Console.WriteLine(e + input);
-                e++;
+                Console.WriteLine(words2 + words1);
+                words2++;
             }
             Console.ReadLine();
 
@@ -66,37 +62,81 @@ namespace Iterations_Exercise
             }
             Console.ReadLine();
 
-            //6. Create a List of strings where each item in the list is unique. Ask the user to select text to search for in the List. 
+            //6.Create a List of strings where each item in the list is unique.Ask the user to select text to search for in the List.
             //Create a loop that iterates through the list and then displays the index of the array that contains matching text on the screen.
-            string[] names = { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva" };
-            string name1 = "";
+            List<string> names = new List<string>();
+            names.Add("Curtis");
+            names.Add("Dave");
+            names.Add("Misty");
+            names.Add("Adolfo");
+            names.Add("Kevin");
+            names.Add("Corey");
+            names.Add("Guillermo");
+            names.Add("Steven");
+            names.Add("Eva");
 
             Console.WriteLine("Please search for the name starting with the letter M: ");
-            int name1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(names[name1]);
+            int input = Convert.ToInt32(Console.ReadLine());
 
-            while (name1 != names)
+            for (input = 0; input < names.Length; input++)
             {
-                Console.WriteLine("Enter a guess: ");
-                name1 = Console.ReadLine();
+                if (names[input] == "Misty")
+                {
+                    Console.WriteLine(names[input]);
+                }
             }
-            Console.WriteLine("You Win!");
             Console.ReadLine();
 
             //7.Add code to that above loop that tells a user if they put in text that isn’t in the List.
-
+            for (input = 0; input < names.Length; input++)
+            {
+                if (names[input] != "Misty")
+                {
+                    Console.WriteLine("This name does not exist." + [input]);
+                }
+            }
+            Console.ReadLine();
 
             //8. Add code to that above loop that stops it from executing once a match has been found.
-
+            for (input = 0; input < names.Length; input++)
+            {
+                if (names[input] == "Misty")
+                {
+                    Console.WriteLine("Thank you for finding the match: " + input);
+                }
+                else
+                {
+                    Console.WriteLine(input + " does not exist on my list.");
+                }
+            }
+            Console.ReadLine();
 
             //9. Create a List of strings that has at least two identical strings in the List. 
             //Ask the user to select text to search for in the List. Create a loop that iterates through the list and then 
             //displays the indices of the array that contain matching text on the screen.
-            List<string> names12 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva" };
+            List<string> names12 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva", "Misty" };
 
+            Console.WriteLine("Please search for the name starting with the letter Misty: ");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            for (input = 0; input < names.Length; input++)
+            {
+                while (names[input] == "Misty")
+                {
+                    Console.WriteLine("This input already exists in the database: " + input);
+                }
+            }
+            Console.ReadLine();
 
             //10. Add code to that above loop that tells a user if they put in text that isn’t in the List.
-
+            for (input = 0; input < names.Length; input++)
+            {
+                while (input != names)
+                {
+                    Console.WriteLine(input + " Does not exist in the list.");
+                }
+            }
+            Console.ReadLine();
 
             //11. Create a List of strings that has at least two identical strings in the List. 
             //Create a foreach loop that evaluates each item in the list, and displays a message showing the string and 
@@ -105,7 +145,6 @@ namespace Iterations_Exercise
 
             Console.WriteLine("Please enter a number between 1 and 100: ");
             int input = Convert.ToInt32(Console.ReadLine());
-
 
             foreach (int num in randomNums)
             {
