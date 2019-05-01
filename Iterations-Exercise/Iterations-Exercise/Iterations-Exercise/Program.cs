@@ -32,22 +32,21 @@ namespace Iterations_Exercise
             while (index <= 10)
             {
                 Console.WriteLine(index);
-                //index++;
             }
             Console.ReadLine();
 
             //3.Fix the infinite loop so it will execute.
-            int index = 1;
-            while (index <= 10)
+            int index1 = 1;
+            while (index1 <= 10)
             {
                 Console.WriteLine(index);
-                index++;
+                index1++;
             }
             Console.ReadLine();
 
             //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
-            int index = 1;
-            while (index < 10)
+            int index2 = 1;
+            while (index2 < 10)
             {
                 Console.WriteLine(index);
                 index++;
@@ -55,8 +54,8 @@ namespace Iterations_Exercise
             Console.ReadLine();
 
             //5.Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
-            int index = 1;
-            while (index <= 10)
+            int index3 = 1;
+            while (index3 <= 10)
             {
                 Console.WriteLine(index);
                 index++;
@@ -76,33 +75,34 @@ namespace Iterations_Exercise
             names.Add("Guillermo");
             names.Add("Steven");
             names.Add("Eva");
+            int names1 = Convert.ToInt32(names);
 
             Console.WriteLine("Please search for the name starting with the letter M: ");
-            int input = Convert.ToInt32(Console.ReadLine());
+            int input1 = Convert.ToInt32(Console.ReadLine());
 
-            for (input = 0; input < names.Length; input++)
+            for (input1 = 0; input1 < names.Count; input1++)
             {
-                if (names[input] == "Misty")
+                if (names[input1] == "Misty")
                 {
-                    Console.WriteLine(names[input]);
+                    Console.WriteLine(names[input1]);
                 }
             }
             Console.ReadLine();
 
             //7. Add code to that above loop that tells a user if they put in text that isn’t in the List.
-            for (input = 0; input < names.Length; input++)
+            for (input1 = 0; input1 < names.Count; input1++)
             {
-                if (names[input] != names)
+                if (names[input1] = false) 
                 {
-                    Console.WriteLine("This name does not exist." + [input]);
+                    Console.WriteLine("This name does not exist." + input1);
                 }
             }
             Console.ReadLine();
 
             //8. Add code to that above loop that stops it from executing once a match has been found.
-            for (input = 0; input < names.Length; input++)
+            for (input = 0; input1 < names.Count; input1++)
             {
-                if (names[input] == "Misty")
+                if (names[input1] == "Misty")
                 {
                     Console.WriteLine("Thank you for finding the match: " + input);
                 }
@@ -119,11 +119,11 @@ namespace Iterations_Exercise
             List<string> names12 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva", "Misty" };
 
             Console.WriteLine("Please search for the name starting with the letter Misty: ");
-            int input = Convert.ToInt32(Console.ReadLine());
+            int input2 = Convert.ToInt32(Console.ReadLine());
 
-            for (input = 0; input < names.Length; input++)
+            for (input = 0; input2 < names12.Count; input2++)
             {
-                while (names[input] == "Misty")
+                while (names12[input2] == "Misty")
                 {
                     Console.WriteLine("This input already exists in the database: " + input);
                 }
@@ -131,9 +131,9 @@ namespace Iterations_Exercise
             Console.ReadLine();
 
             //10. Add code to that above loop that tells a user if they put in text that isn’t in the List.
-            for (input = 0; input < names.Length; input++)
+            for (input = 0; input2 < names12.Count; input2++)
             {
-                while (input != names)
+                while (input2 != names12)
                 {
                     Console.WriteLine(input + " Does not exist in the list.");
                 }
@@ -146,13 +146,14 @@ namespace Iterations_Exercise
             List<int> randomNums = new List<int> { 25, 54, 10, 98, 44, 17, 10, 55, 78, 37, 33, 33, 48, 92, 85, 68, 88 };
 
             Console.WriteLine("Please enter a number between 1 and 100: ");
-            int input = Convert.ToInt32(Console.ReadLine());
+            int input3 = Convert.ToInt32(randomNums);
+            Console.WriteLine(randomNums);
 
             foreach (int num in randomNums)
             {
-                if (input = num)
+                if (input3 != randomNums)
                 {
-                    Console.WriteLine("The following numbers exist more than once: " + num);
+                    Console.WriteLine("the following numbers exist more than once: " + num);
                 }
             }
             Console.ReadLine();
