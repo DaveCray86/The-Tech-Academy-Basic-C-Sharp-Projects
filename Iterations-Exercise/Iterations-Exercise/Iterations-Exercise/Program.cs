@@ -10,7 +10,7 @@ namespace Iterations_Exercise
     {
         static void Main(string[] args)
         {
-            //1. Create a one - dimensional Array of strings. 
+            //*1. Create a one - dimensional Array of strings. 
             //Ask the user to input some text. 
             //Create a loop that goes through each string in the Array, adding the user’s text to the string.
             //Then create a loop that prints off each string in the Array on a separate line.
@@ -27,7 +27,7 @@ namespace Iterations_Exercise
             }
             Console.ReadLine();
 
-            //2. Create an infinite loop.
+            //*2. Create an infinite loop.
             int index = 1;
             while (index <= 10)
             {
@@ -35,34 +35,34 @@ namespace Iterations_Exercise
             }
             Console.ReadLine();
 
-            //3.Fix the infinite loop so it will execute.
+            //*3.Fix the infinite loop so it will execute.
             int index1 = 1;
             while (index1 <= 10)
             {
-                Console.WriteLine(index);
+                Console.WriteLine(index1);
                 index1++;
             }
             Console.ReadLine();
 
-            //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
+            //*4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
             int index2 = 1;
             while (index2 < 10)
             {
-                Console.WriteLine(index);
-                index++;
+                Console.WriteLine(index2);
+                index2++;
             }
             Console.ReadLine();
 
-            //5.Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
+            //*5.Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
             int index3 = 1;
             while (index3 <= 10)
             {
-                Console.WriteLine(index);
-                index++;
+                Console.WriteLine(index3);
+                index3++;
             }
             Console.ReadLine();
 
-            //6.Create a List of strings where each item in the list is unique.Ask the user to select text to search for in the List.
+            //*6.Create a List of strings where each item in the list is unique. Ask the user to select text to search for in the List.
             //Create a loop that iterates through the list and then displays the index of the array that contains matching text on the screen.
 
             List<string> names = new List<string>();
@@ -75,67 +75,105 @@ namespace Iterations_Exercise
             names.Add("Guillermo");
             names.Add("Steven");
             names.Add("Eva");
-            int names1 = Convert.ToInt32(names);
 
-            Console.WriteLine("Please search for the name starting with the letter M: ");
-            int input1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please type a name from the provided list: ");
+            string input7 = Console.ReadLine();
 
-            for (input1 = 0; input1 < names.Count; input1++)
+            for (int i = 0; i < names.Count; i++)
             {
-                if (names[input1] == "Misty")
+                if (input7.Contains(names[i]))
                 {
-                    Console.WriteLine(names[input1]);
+                    Console.WriteLine(names[i] + " is in my list of names. ");
                 }
             }
             Console.ReadLine();
 
-            //7. Add code to that above loop that tells a user if they put in text that isn’t in the List.
-            for (input1 = 0; input1 < names.Count; input1++)
+            //*7. Add code to that above loop that tells a user if they put in text that isn’t in the List.
+            List<string> names1 = new List<string>();
+            names1.Add("Curtis");
+            names1.Add("Dave");
+            names1.Add("Misty");
+            names1.Add("Adolfo");
+            names1.Add("Kevin");
+            names1.Add("Corey");
+            names1.Add("Guillermo");
+            names1.Add("Steven");
+            names1.Add("Eva");
+
+            Console.WriteLine("Please search for the name starting with the letter K: ");
+            string input1 = Console.ReadLine();
+
+            for (int j = 0; j < names1.Count; j++)
             {
-                if (names[input1] = false) 
+                if (!input1.Contains(names1[j]))
                 {
-                    Console.WriteLine("This name does not exist." + input1);
+                    Console.WriteLine("This name does not exist.");
                 }
             }
             Console.ReadLine();
 
             //8. Add code to that above loop that stops it from executing once a match has been found.
-            for (input = 0; input1 < names.Count; input1++)
+            List<string> names2 = new List<string>();
+            names2.Add("Curtis");
+            names2.Add("Dave");
+            names2.Add("Misty");
+            names2.Add("Adolfo");
+            names2.Add("Kevin");
+            names2.Add("Corey");
+            names2.Add("Guillermo");
+            names2.Add("Steven");
+            names2.Add("Eva");
+
+            Console.WriteLine("Please type a name from the provided list: ");
+            string input2 = Console.ReadLine();
+
+            for (int k = 0; k < names2.Count; k++)
             {
-                if (names[input1] == "Misty")
+                if (input2.Contains(names2[k]))
                 {
-                    Console.WriteLine("Thank you for finding the match: " + input);
-                }
-                else
-                {
-                    Console.WriteLine(input + " does not exist on my list.");
+                    Console.WriteLine(names2[k] + " is in my list of names. ");
+                    System.Environment.Exit(0);
                 }
             }
             Console.ReadLine();
 
-            //9. Create a List of strings that has at least two identical strings in the List. 
-            //Ask the user to select text to search for in the List. Create a loop that iterates through the list and then 
+            //*9. Create a List of strings that has at least two identical strings in the List. 
+            //Ask the user to select text to search for in the List. Create a loop that iterates through the list and then
             //displays the indices of the array that contain matching text on the screen.
+
             List<string> names12 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva", "Misty" };
 
-            Console.WriteLine("Please search for the name starting with the letter Misty: ");
-            int input2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please search for the name Misty: ");
+            string input3 = (Console.ReadLine());
 
-            for (input = 0; input2 < names12.Count; input2++)
+            for (int p = 0; p < names12.Count; p++)
             {
-                while (names12[input2] == "Misty")
+                foreach (string name in names12)
                 {
-                    Console.WriteLine("This input already exists in the database: " + input);
+                    if (!input3.Contains(names12[p]))
+                    {
+                        Console.WriteLine(names12[p]);
+                        p++;
+                    }
                 }
             }
             Console.ReadLine();
 
-            //10. Add code to that above loop that tells a user if they put in text that isn’t in the List.
-            for (input = 0; input2 < names12.Count; input2++)
+            //*10. Add code to that above loop that tells a user if they put in text that isn’t in the List.
+            List<string> names22 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva", "Misty" };
+
+            Console.WriteLine("Please search for the name Misty: ");
+            string input4 = (Console.ReadLine());
+
+            for (int p = 0; p < names22.Count; p++)
             {
-                while (input2 != names12)
+                foreach (string name in names22)
                 {
-                    Console.WriteLine(input + " Does not exist in the list.");
+                    if (!input4.Contains(names22[p]))
+                    {
+                        Console.WriteLine("My list does not contain: " + input4);
+                        p++;
+                    }
                 }
             }
             Console.ReadLine();
@@ -143,20 +181,25 @@ namespace Iterations_Exercise
             //11. Create a List of strings that has at least two identical strings in the List. 
             //Create a foreach loop that evaluates each item in the list, and displays a message showing the string and 
             //whether or not it has already appeared in the list.
-            List<int> randomNums = new List<int> { 25, 54, 10, 98, 44, 17, 10, 55, 78, 37, 33, 33, 48, 92, 85, 68, 88 };
 
-            Console.WriteLine("Please enter a number between 1 and 100: ");
-            int input3 = Convert.ToInt32(randomNums);
-            Console.WriteLine(randomNums);
+            List<string> names8 = new List<string> { "Curtis", "Dave", "Misty", "Adolfo", "Kevin", "Corey", "Guillermo", "Steven", "Eva", "Misty" };
 
-            foreach (int num in randomNums)
+            Console.WriteLine(names8);
+            Console.ReadLine();
+
+            foreach (string name8 in names8)
             {
-                if (input3 != randomNums)
+                if (name8.Contains("Misty"))
                 {
-                    Console.WriteLine("the following numbers exist more than once: " + num);
+                    Console.WriteLine("That name is in my list twice." + name8);
+                }
+                else if (!name8.Contains("Misty"))
+                {
+                    Console.WriteLine(names8);
                 }
             }
             Console.ReadLine();
+
         }
     }
 }
