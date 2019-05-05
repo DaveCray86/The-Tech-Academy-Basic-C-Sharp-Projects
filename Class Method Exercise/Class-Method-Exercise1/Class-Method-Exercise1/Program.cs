@@ -10,8 +10,28 @@ namespace Class_Method_Exercise1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a 2 digit number: ");
-            int input1 = Convert.ToInt32(Console.ReadLine());
+            //C# Page 111
+
+            Console.WriteLine("Please choose the first number you would like to do Math operations on: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please choose the second number you would like to do Math operations on: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Numbers1 a = new Numbers1(x, y);
+
+            Console.WriteLine("Adding them together: ");
+            Console.WriteLine(a.Add());
+
+            Console.WriteLine("Subtracting them: ");
+            Console.WriteLine(a.Mult());
+
+            Console.WriteLine("Dividing them: ");
+            Console.WriteLine(a.Sub());
+
+            Console.WriteLine("Multiplying them: ");
+            Console.WriteLine(a.Divide());
+
+            a.print();
             Console.ReadLine();
         }
     }
