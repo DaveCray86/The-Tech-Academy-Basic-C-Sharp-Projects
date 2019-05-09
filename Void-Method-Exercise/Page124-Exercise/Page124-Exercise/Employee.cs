@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Page117_Exercise
+namespace Page124_Exercise
 {
-    public class Employee : Person                      //Pulled from Person class.
+    public class Employee : Person
     {
         public int callID { get; set; }
         public void SayName()

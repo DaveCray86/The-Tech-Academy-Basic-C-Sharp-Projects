@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D2ACBCA-A34B-4C89-815D-6C52338FD60C}</ProjectGuid>
+    <ProjectGuid>{B82DE89B-2027-4FB0-BBEC-8BFFBD29FF7D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Page117_Exercise</RootNamespace>
-    <AssemblyName>Page117-Exercise</AssemblyName>
+    <RootNamespace>Page124_Exercise</RootNamespace>
+    <AssemblyName>Page124-Exercise</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

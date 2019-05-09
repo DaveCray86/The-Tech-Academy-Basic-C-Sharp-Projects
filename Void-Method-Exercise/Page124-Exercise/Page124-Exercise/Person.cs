@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Page117_Exercise
+namespace Page124_Exercise
 {
     public class Person
     {
