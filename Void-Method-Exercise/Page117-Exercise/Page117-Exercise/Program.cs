@@ -10,7 +10,7 @@ namespace Page117_Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hey there User...");
             int s;
             RunCuntdown(3, out s);
             Console.WriteLine(s);
