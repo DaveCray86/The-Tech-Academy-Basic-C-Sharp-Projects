@@ -12,7 +12,6 @@ namespace Page114_Exercise
         public decimal ClassDecimal { get; set; }
         public string ClassString { get; set; }
 
-
         public Class1()
         {
             ClassInt = 0;
