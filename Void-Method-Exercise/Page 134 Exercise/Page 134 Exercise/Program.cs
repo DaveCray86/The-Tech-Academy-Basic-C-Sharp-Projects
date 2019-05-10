@@ -10,9 +10,6 @@ namespace Page_134_Exercise
     {
         static void Main(string[] args)
         {
-            //console color change
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Magenta;
             //sleep loop
             bool sleep = false;
             while (sleep == false)
