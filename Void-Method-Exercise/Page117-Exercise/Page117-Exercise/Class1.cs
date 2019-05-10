@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Page117_Exercise
 {
-    class Class1
+    public class Class1
     {
         int x { get; set; }
 

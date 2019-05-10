@@ -42,15 +42,15 @@ namespace Page117_Exercise
             switch (selection)
             {
                 case "1":
-                    Console.Write("Please enter the Celsius temperature: ");
-                    F = TempConvert.CelsiusToFahrenheit(Console.ReadLine());
-                    Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
+                    Console.Write("Please enter the Celsius temp: ");
+                    F = Class1.TempConvert.CelsiusToFahrenheit(Console.ReadLine());
+                    Console.WriteLine("Temp in Fahrenheit: {0:F2}", F);
                     break;
 
                 case "2":
-                    Console.Write("Please enter the Fahrenheit temperature: ");
-                    C = TempConvert.FahrenheitToCelsius(Console.ReadLine());
-                    Console.WriteLine("Temperature in Celsius: {0:F2}", C);
+                    Console.Write("Please enter the Fahrenheit temp: ");
+                    C = Class1.TempConvert.FahrenheitToCelsius(Console.ReadLine());
+                    Console.WriteLine("Temp in Celsius: {0:F2}", C);
                     break;
 
                 default:
