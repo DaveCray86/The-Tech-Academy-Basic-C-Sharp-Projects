@@ -12,7 +12,7 @@ namespace Page117_Exercise
         {
             Console.WriteLine("Hey there User...");
             int s;
-            RunCuntdown(3, out s);
+            RunCountdown(3, out s);
             Console.WriteLine(s);
             Console.ReadLine();
 
@@ -63,7 +63,7 @@ namespace Page117_Exercise
             Console.ReadKey();
         }
 
-        public static void RunCuntdown(int n, out int i)
+        public static void RunCountdown(int n, out int i)
         {
             i = 0;
 
