@@ -67,8 +67,6 @@ namespace Page117_Exercise
         {
             i = 0;
 
-
-
             for (int x = n; x > 0; x--)
             {
                 Console.WriteLine(n);
