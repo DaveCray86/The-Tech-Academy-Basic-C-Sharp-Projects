@@ -10,47 +10,19 @@ namespace Page_134_Exercise
     {
         static void Main(string[] args)
         {
-            //sleep loop
-            bool sleep = false;
-            while (sleep == false)
+            Console.WriteLine("Please enter the current day of the week:");
+            try
             {
-                Console.WriteLine("Please enter the current day of the week: ");
-                //try catch start
-                try
-                {
-                    string read = Console.ReadLine();
-                    
-                    bool res = int.TryParse(read, out int num1);
-                    if (res == false)
-                    {
-                        DaysOfTheWeek day = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), read);
-                        Console.WriteLine("It's " + day + "! ");
-                        sleep = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Please enter a legitimate day of the week.");
-                    }
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Please enter a legitimate day of the week.");
-                }
-                //end try catch
+                string currentDay = Console.ReadLine();
+                Week_Days.DaysOfTheWeek day = (Week_Days.DaysOfTheWeek)Enum.Parse(typeof(Week_Days.DaysOfTheWeek), currentDay);
+
+                Console.WriteLine("The day is {0}.", day);
             }
-            //end sleep
-            Console.WriteLine("Press enter to end the program.");
+            catch
+            {
+                Console.WriteLine("Please enter an actual day of the week.");
+            }
             Console.ReadLine();
-        }
-        public enum DaysOfTheWeek
-        {
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
-        }
+        } 
     }
 }
