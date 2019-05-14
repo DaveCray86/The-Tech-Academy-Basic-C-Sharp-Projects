@@ -16,20 +16,16 @@ namespace Page117_Exercise
             Console.WriteLine(s);
             Console.ReadLine();
 
-
             Console.Write("Enter a dividend: ");
             int dividend = int.Parse(Console.ReadLine());
             Console.Write("Enter a divisor: ");
             int divisor = int.Parse(Console.ReadLine());
             int remainder;
-
             int result = Remainder(dividend, divisor, out remainder);
 
             Console.WriteLine("{0} / {1} = {2} with a remainder of {3}",
                 dividend, divisor, result, remainder);
             Console.ReadLine();
-
-
 
             Console.WriteLine("Please select the convertor direction");
             Console.WriteLine("1. From Celsius to Fahrenheit.");
@@ -62,7 +58,6 @@ namespace Page117_Exercise
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
-
         public static void RunCountdown(int n, out int i)
         {
             i = 0;
@@ -73,7 +68,6 @@ namespace Page117_Exercise
                 n = n - 1;
                 i++;
             }
-
         }
         public static int square(int a, int b)
         {
