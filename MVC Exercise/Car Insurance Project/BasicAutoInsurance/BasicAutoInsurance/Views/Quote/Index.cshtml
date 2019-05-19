@@ -1,0 +1,79 @@
+﻿<h2>Begin Your Auto Insurance Quote Today!</h2>
+<h4>Start by completing the form below:</h4>
+<br />
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <div class="card-body">
+                @using (Html.BeginForm("Apply", "Quote", FormMethod.Post))
+                {
+                    <div class="row no-gutters">
+                        <div class="form-group col-md-6">
+                            <p>First Name</p>
+                            <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                        </div>
+
+
+                        <div class="form-group col-md-6">
+                            <p>Last Name:</p>
+                            <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Email Address:</p>
+                            <input name="EmailAddress" type="text" class="form-control" placeholder="Email Address" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Date of Birth:</p>
+                            <input name="DateOfBirth" type="text" class="form-control" placeholder="mm/dd/yyyy" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Car Year:</p>
+                            <input name="CarYear" type="text" class="form-control" placeholder="yyyy" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Car Make:</p>
+                            <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Car Model:</p>
+                            <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Number of DUI's:</p>
+                            <input name="Dui" type="text" class="form-control" placeholder="Yes or No" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Number of Traffic Tickets Received:</p>
+                            <input name="Tickets" type="text" class="form-control" placeholder="No. of Tickets" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <p>Would you like Liability or Full Coverage Insurance?</p>
+                            <input name="Coverage" type="text" class="form-control" placeholder="Full or Liability" />
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-success">Submit Quote</button>
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<div class="card-body bg-success img-rounded">
+    <div class="form-horizontal">
+        <h3>
+            Your total quote is:
+            $@ViewData["quote.Total"]
+        </h3>
+    </div>
+</div>
