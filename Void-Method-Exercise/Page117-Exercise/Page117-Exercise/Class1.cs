@@ -40,8 +40,6 @@ namespace Page117_Exercise
             e.x = e.x / 2;
         }
 
-
-
         //Static Class
         public static class TempConvert
         {
@@ -49,21 +47,16 @@ namespace Page117_Exercise
             {
                 // Convert argument to double for calculations.
                 double celsius = Double.Parse(tempC);
-
                 // Convert Celsius to Fahrenheit.
                 double fahrenheit = (celsius * 9 / 5) + 32;
-
                 return fahrenheit;
             }
-
             public static double FahrenheitToCelsius(string tempF)
             {
                 // Convert argument to double for calculations.
                 double fahrenheit = Double.Parse(tempF);
-
                 // Convert Fahrenheit to Celsius.
                 double celsius = (fahrenheit - 32) * 5 / 9;
-
                 return celsius;
             }
         }

@@ -10,7 +10,6 @@ namespace Page_137_Exercise
     {
         static void Main(string[] args)
         {
-            
             Number number = new Number();
             number.Amount = 44;
             Console.WriteLine(number.Amount);
